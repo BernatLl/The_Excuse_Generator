@@ -12,7 +12,8 @@ window.onload = function() {
   let select = array => {
     let selectarray = Math.floor(Math.random() * array.length);
     return array[selectarray];
-    };
+};
+
 
   console.log(
     `${select(who)} ${select(action)} ${select(what)} ${select(when)}`
