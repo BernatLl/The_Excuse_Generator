@@ -17,17 +17,17 @@ const GetItem = (arr, i) => arr[i];
 //Sacar el string del array.
 const GetString = v => `${GetItem(v, RandomNumber(v))} `;
 //Función para generar la excusa aleatoria.
-const excuseGenerator = dset => {
+/*const excuseGenerator = dset => {
   let str = "";
   dset.forEach(arr => {
     str += `${GetString(arr)} `;
   });
   console.log("aqui esta el str", str);
   return str;
-};
-/*Hemos probado esta opción pero no funciona:
+};*/
+
 const excuseGenerator = dset =>
-  dset.reduce((acc = "", item) => (acc += GetString(item)));*/
+  dset.reduce((acc = "", item) => (acc += GetString(item)), undefined);
 //Selección del tag de HTML para aplicar la función.
 const paragraf = document.querySelector("#excuse");
 window.onload = function() {
