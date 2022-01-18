@@ -22,6 +22,6 @@ const excuseGenerator = dset =>
 //Selección del tag de HTML para aplicar la función.
 const paragraf = document.querySelector("#excuse");
 window.onload = function() {
-  //Muestra de la excusa aletaria cada vez que se actualiza la página.
+  //Muestra de la excusa aletoria cada vez que se actualiza la página.
   paragraf.innerHTML = excuseGenerator(dataset);
 };
